@@ -14,6 +14,8 @@ React'ta "state", bir component'in yaşam döngüsü boyunca değişebilecek ver
 
 React'da bir state 16.8 sürümü ile beraber hooklar hayatımıza girmiştir. Bu noktada  State tanımlamak için `useState` hookunu kullanırız. 
 
+Bu örnekte, `useState` hook'u `0` başlangıç değeri ile kullanılarak bir `count` state değişkeni ve bu değişkeni güncellemek için bir `setCount` fonksiyonu oluşturulmuştur. Butona her tıklandığında, `setCount` fonksiyonu çağrılarak `count` değeri bir arttırılır ve component yeniden render edilir.
+
 ```jsx
 
 import { useState} from 'react'
@@ -33,7 +35,7 @@ function App () {
 
 ```
 
-Bu örnekte, `useState` hook'u `0` başlangıç değeri ile kullanılarak bir `count` state değişkeni ve bu değişkeni güncellemek için bir `setCount` fonksiyonu oluşturulmuştur. Butona her tıklandığında, `setCount` fonksiyonu çağrılarak `count` değeri bir arttırılır ve component yeniden render edilir.  
+Basit bir form işleminde ise bu şekilde bir state kullanımı sağlayabiliriz.
 
 ```jsx
 
@@ -61,7 +63,28 @@ function App() {
 }
 
 ```
-basit bir form işleminde ise bu şekilde bir state kullanımı sağlayabiliriz 
 
+Bir button ile beraber açılır kapanır bir menüyü hızlıca yaratabilirsiniz. 
 
-Saf JavaScript'te, dinamik UI'lar oluşturmak için DOM API'si doğrudan kullanılır. Bu, elementleri manuel olarak oluşturmayı, seçmeyi ve güncellemeyi gerektirir. State yönetimi genellikle custom logic ile gerçekleştirilir ve DOM güncellemeleri için manuel olarak kod yazmak gerekir. React'in sağladığı otomatik UI güncellemeleri, sanal DOM ve state yönetimi gibi özellikler, saf JavaScript'e kıyasla büyük avantajlar sağlar. React, uygulama geliştirmeyi daha hızlı, daha verimli ve hata yapma olasılığını azaltacak şekilde basitleştirir.
+```jsx
+
+function DropdownMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => setIsOpen(!isOpen)}>Menüyü Aç/Kapa</button>
+      {isOpen && (
+        <ul>
+          <li>Seçenek 1</li>
+          <li>Seçenek 2</li>
+          <li>Seçenek 3</li>
+        </ul>
+      )}
+    </div>
+  );
+}
+
+```
+
+State kullanımı ile ilgili birçok basit ve karmaşık kullanım methodlar vardır. Bu senaryolar, state kullanımının uygulama geliştirmedeki çeşitliliğini ve önemini gösterir. State, uygulamanızın kullanıcı etkileşimlerine dinamik bir şekilde yanıt vermesini sağlar ve kullanıcı deneyimini zenginleştirir.
