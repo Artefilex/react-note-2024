@@ -164,3 +164,20 @@ export default AddTodo;
 Zustandın yetenekleri ve sağladıkları bu kadarla sınırlı değil içinde birçok farklı fonskiyon ve yaklaşım barındırıyor incelemeniz için link bırakıyorum.
 
 <a href="https://github.com/pmndrs/zustand">Zustand Doc</a>
+
+
+## Zustand ile Asenkron İşlemler
+
+Zustand bir işlemin asenkron olup olmadığını umursamaz sadece işlemleri hazır olduğu zaman çalıştırmanız yeterlidir 
+
+```js
+const useTodos = create((set) => ({
+  todos: [],
+  fetchData: async () => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos/")
+    set({ fishies: await response.json() })
+  },
+}))
+
+
+```

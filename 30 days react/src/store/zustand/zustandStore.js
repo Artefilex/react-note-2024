@@ -18,6 +18,10 @@ export const useTodos = create((set) => ({
     set((state) => ({
       todos: [...state.todos, item],
     })),
+    updateTodoWithData: async () => {
+      const response = await fetch(  "https://jsonplaceholder.typicode.com/todos")
+      set({ todos: await response.json() })
+    },
   removeTodo: (id) =>
     set((state) => ({
       todos: state.todos.filter((_, key) => key !== id),
@@ -29,26 +33,26 @@ export const useTodosFull = create((set) => ({
   title: "",
   complated: false,
 
-  setTitle: (title) =>
-    set(() => ({
-      title,
-    })),
-  setComplated: (complated) =>
-    set(() => ({
-      complated,
-    })),
+  setTitle: (title) =>{
+    set(() => ({ title,  }))
+  },
+    
+  setComplated: (complated) => {
+      set(() => ({ complated }))
+  },
   resetTodoForm: () =>
     set(() => ({
       title: "",
       complated: false,
     })),
-  addTodo: (item) =>
-    set((state) => ({
-      todos: [...state.todos, item],
-    })),
+  addTodo: (item) => set((state) => ({ todos: [...state.todos, item] })) ,
 
   removeTodo: (id) =>
     set((state) => ({
       todos: state.todos.filter((_, key) => key !== id),
     })),
+    updateTodoWithData: async () => {
+      const response = await fetch(  "https://jsonplaceholder.typicode.com/todos")
+      set({ todos: await response.json() })
+    },  
 }));

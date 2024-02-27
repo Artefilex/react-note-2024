@@ -1,10 +1,17 @@
-import { useTodos } from "../store/zustand/zustandStore";
+import { useEffect } from "react";
+import {  useTodosFull } from "../store/zustand/zustandStore";
 import AddTodo from "./AddTodo";
 
 function Todos() {
-  const todos = useTodos((state)=> state.todos)
- console.log(todos)
-  const removeTodo = useTodos((state) => state.removeTodo)
+  const todos = useTodosFull((state)=> state.todos)
+  const updateTodoWithData = useTodosFull((state)=> state.updateTodoWithData)
+ useEffect(()=>{
+  
+   updateTodoWithData()
+ },[updateTodoWithData])
+ 
+
+  const removeTodo = useTodosFull((state) => state.removeTodo)
   return <div>{
     todos.length === 0 && (
         <div> todos boş </div>
