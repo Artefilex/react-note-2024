@@ -29,22 +29,26 @@ export const useTodosFull = create((set) => ({
   title: "",
   complated: false,
 
-  setTitle: title => set(() => ({
-      title
+  setTitle: (title) =>
+    set(() => ({
+      title,
     })),
-  setComplated: complated => set(() => ({
-     complated
+  setComplated: (complated) =>
+    set(() => ({
+      complated,
     })),
-  resetTodoForm: () =>  set(() => ({
+  resetTodoForm: () =>
+    set(() => ({
       title: "",
       complated: false,
     })),
-  addTodo: item =>  set((state) => ({
+  addTodo: (item) =>
+    set((state) => ({
       todos: [...state.todos, item],
-     
     })),
- 
-  removeTodo: (id) => set((state) => ({
+
+  removeTodo: (id) =>
+    set((state) => ({
       todos: state.todos.filter((_, key) => key !== id),
     })),
 }));

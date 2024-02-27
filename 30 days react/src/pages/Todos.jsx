@@ -19,6 +19,7 @@ function Todos() {
         ))
     }
     <AddTodo/>
+   
     
     </div>;
 }
