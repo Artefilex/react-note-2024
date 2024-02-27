@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import {  useTodosFull } from "../store/zustand/zustandStore";
+ import { useEffect } from "react";
+ import {  useTodosFull } from "../store/zustand/zustandStore";
 import AddTodo from "./AddTodo";
 
 function Todos() {
@@ -32,3 +32,5 @@ function Todos() {
 }
 
 export default Todos;
+
+

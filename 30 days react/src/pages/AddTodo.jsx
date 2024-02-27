@@ -1,12 +1,16 @@
-import {  useTodosFull} from "../store/zustand/zustandStore";
+import { useTodosFull} from "../store/zustand/zustandStore";
 
 function AddTodo() {
-     const {title , setTitle ,complated , setComplated , addTodo , resetTodoForm} = useTodosFull() 
-
+  const {title , setTitle ,complated , setComplated , addTodo , resetTodoForm} = useTodosFull() 
+ 
     const handleSubmit = e =>{
         e.preventDefault()
-        addTodo({ title,  complated })
-         resetTodoForm() 
+        addTodo({
+            title,  complated
+        })
+        resetTodoForm() 
+        setTitle("")
+        setComplated(false)
     }
   return <form onSubmit={handleSubmit}>
 <label htmlFor="todo"> Todo </label>
