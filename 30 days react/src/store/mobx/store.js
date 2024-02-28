@@ -1,16 +1,13 @@
 import {makeAutoObservable} from "mobx"
-import { createContext } from "react";
+
 class Todo {
+   id = Math.random()
     title = "";
     complated= false;
     constructor(title){
         makeAutoObservable(this)
        this.title = title 
     }
-    toogleComplated () {
-        this.complated = !this.complated
-    }
-
 
 }
 class TodoStore {
@@ -19,17 +16,26 @@ class TodoStore {
     constructor() {
       makeAutoObservable(this);
     }
-  
-    addTodo(title) {
-      this.todos.push(new Todo(title));
-    }
+    toogleComplated (id) {
+      this.todos.find((todo)=>{
+        if(todo.id === id){
+          todo.complated = !todo.complated
+        }
+      })
+  }
+
+      addTodo(title) {
+        this.todos = [...this.todos ,new Todo(title)]
+      }
+    
   
     removeTodo(id) {
       this.todos = this.todos.filter((todo) => todo.id !== id);
     }
   }
   
-  export const todoStore = new TodoStore();
-  export const TodoStoreContext = createContext(todoStore);
+  const stores = new TodoStore();
 
+  
+export default  stores
 

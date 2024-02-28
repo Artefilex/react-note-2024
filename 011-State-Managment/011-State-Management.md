@@ -44,6 +44,9 @@ Redux, React uygulamaları için popüler bir state yönetim kütüphanesidir. U
 
 MobX, başka bir popüler state yönetim kütüphanesidir ve daha az boilerplate kod ile daha sezgisel bir yaklaşım sunar. MobX, uygulama state'ini izlenebilir (observable) veriler olarak yönetir ve bu veriler üzerinde yapılan değişiklikler otomatik olarak ilgili bileşenleri günceller. Bu, geliştiricilere daha az kod yazma ve state değişikliklerini daha kolay yönetme imkanı verir.
 
+[MobX için Detay](./Mobx.md)
+[Temel Kullanımı](../30%20days%20react/src/pages/Mobx-todoApp/)
+
 4. **React Query, SWR**
 
 Veri fetch işlemleri için özel olarak tasarlanmış kütüphaneler olan React Query ve SWR, sunucudan gelen verilerin yönetimi ve caching işlemleri için kullanılır. Bu kütüphaneler, veri fetch etme, caching, senkronizasyon ve güncelleme işlemlerini kolaylaştırarak, uygulamanın performansını ve verimliliğini artırır.
@@ -54,6 +57,5 @@ Zustand, React için minimal ve hızlı bir state yönetim kütüphanesidir. Red
 
 [Zustand için Detay](./Zustand.md)
 [Temel Kullanımı](../30%20days%20react/src/store/zustand/zustandStore.js)
-6. **Recoil**
 
-Recoil, Facebook tarafından geliştirilen ve React ile daha iyi entegre olacak şekilde tasarlanmış bir state yönetim kütüphanesidir. Atom ve seçici kavramlarını kullanarak uygulamanın durumunu yönetir. Recoil, daha granüler bir durum yönetimi sağlar ve büyük, karmaşık uygulamalar için iyi bir seçenektir.
+

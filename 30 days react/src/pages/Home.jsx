@@ -5,11 +5,13 @@
 // import Todos from "./Todos";
 import Todo from "./Mobx-todoApp/Todo";
 
+
 function Home() {
     
   return <>
   {/* <Todos/> */}
-  <Todo/>
+  
+ <Todo/>
   {/* <Counter/> */}
   {/* <NavLink to={"/about"}> Home</NavLink> */}
   {/* <NavLink to={"/products"}> Products</NavLink> */}

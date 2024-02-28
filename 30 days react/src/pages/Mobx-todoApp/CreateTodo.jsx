@@ -1,11 +1,10 @@
-import { useState, useContext } from "react";
-import { TodoStoreContext } from "../../store/mobx/store";
+import { useState} from "react";
+import store from "../../store/mobx/store";
 import { observer } from "mobx-react";
 
 const CreateTodo = observer(() => {
   const [title, setTitle] = useState("");
-  const store = useContext(TodoStoreContext);
-
+ console.log(store.todos)
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim()) {
