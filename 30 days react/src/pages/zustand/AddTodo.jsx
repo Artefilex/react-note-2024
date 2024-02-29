@@ -1,4 +1,4 @@
-import { useTodosFull} from "../store/zustand/zustandStore";
+import { useTodosFull} from "../../store/zustand/zustandStore";
 
 function AddTodo() {
   const {title , setTitle ,complated , setComplated , addTodo , resetTodoForm} = useTodosFull() 

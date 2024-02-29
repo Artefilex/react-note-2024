@@ -1,4 +1,4 @@
-import { useCounterStore } from "../store/zustand/zustandStore";
+import { useCounterStore } from "../../store/zustand/zustandStore";
 
 function Counter() {
   const {count,increment, clear , decrement} = useCounterStore((state) => state);

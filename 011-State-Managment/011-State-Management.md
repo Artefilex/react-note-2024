@@ -1,4 +1,4 @@
-# State Management
+# Genel Bakış 
 
 React uygulamalarında, bazen bir state'i farklı bileşenler arasında paylaşmak ve yönetmek gerekebilir. Özellikle büyük ve karmaşık uygulamalarda, state yönetimi önemli bir konudur. React'te bir state, doğrudan sadece üst bileşenden alt bileşenlere props olarak geçirilebilir. Bu durum, "prop drilling" olarak bilinen, derin bileşen hiyerarşilerinde state'i aktarmanın zor ve karmaşık hale gelmesine neden olabilir. Bu sorunu çözmek ve uygulama içindeki state yönetimini kolaylaştırmak için çeşitli state yönetim kütüphaneleri ve yaklaşımları kullanırız. Bu kütüphanelere bakmadan önce hangi durumlarda kullandığımıza bakalım.
 
@@ -46,6 +46,9 @@ MobX, başka bir popüler state yönetim kütüphanesidir ve daha az boilerplate
 
 [MobX için Detay](./Mobx.md)
 [Temel Kullanımı](../30%20days%20react/src/pages/Mobx-todoApp/)
+
+<a href="https://github.com/mobxjs/mobx-react"> Kaynak </a>
+
 
 4. **React Query, SWR**
 
