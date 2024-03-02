@@ -4,13 +4,13 @@ import App from "./App.jsx";
 import "./index.css";
 //  import { Provider } from "mobx-react";
 //  import { todoStore } from "./store/mobx/store.js";
-//  import { RecoilRoot } from "recoil";
+import { RecoilRoot } from "recoil";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <Provider todoStore={todoStore}> */}
-    {/* <RecoilRoot> */}
+    <RecoilRoot>
       <App />
-    {/* </RecoilRoot> */}
+    </RecoilRoot>
     {/* </Provider> */}
   </React.StrictMode>
 );
