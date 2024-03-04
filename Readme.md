@@ -11,3 +11,5 @@
 9. [React Routing Nedir? React Router Dom Nasıl Kullanılır ?](./009-React-Routing.md)
 10. [Memory Leak Nedir ?](./010-Memory-Leak.md)
 11. [State Managment Nedir ?](./011-State-Management.md)
+12. [Memoization Nedir ?](./012-Memoization%20.md)
+13. [Error Boundaries](./014-Error-Boundaries.md)
