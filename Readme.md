@@ -13,3 +13,4 @@
 11. [State Managment Nedir ?](./011-State-Management.md)
 12. [Memoization Nedir ?](./012-Memoization%20.md)
 13. [Error Boundaries](./014-Error-Boundaries.md)
+14. [Code Splitting ve Lazy Loading Nedir](./014-Code-Splitting-Lazy-Loading.md)
