@@ -38,8 +38,7 @@ export default Debaunce;
 Debounce tekniği, özellikle bir kullanıcı girdi alanına veri girerken (örneğin, bir arama kutusunda yazarken) sürekli olarak gerçekleşen işlemleri kontrol altına almak için kullanılır. Yukarıdaki kod örneğinde, bir kullanıcı input alanına her karakter girdiğinde, bir API isteği gönderiliyor. Eğer bu durum bir arama veya filtreleme fonksiyonu için kullanılıyorsa, her bir harf yazıldığında API'ye yapılan çağrı sayısının çok yüksek olması, aşırı ağ trafiği ve gereksiz yüklenme sürelerine yol açabilir. Bu da hem kullanıcı deneyimini olumsuz etkiler hem de sunucu kaynaklarını gereksiz yere tüketir.
 
 <img src="./assests/network.PNG" width="100%" />  
-<video autoplay loop muted>
-  <source src="./assests/nonDebaunce.mp4" type="video/mp4">
+
   Your browser does not support the video tag.
 </video>
 Debounce tekniği, kullanıcının yazmayı bitirmesini bir süre bekler ve belirlenen zaman dilimi içinde sadece bir kez API isteği yapılmasını sağlar. Bu, özellikle arama işlevleri gibi gerçek zamanlı veri işleme gerektiren durumlar için idealdir. Bu yöntem sayesinde, kullanıcı girdi alanına her karakter girdiğinde değil, belirli bir süre boyunca herhangi bir giriş yapılmadığında istek gönderilir. Böylece ağ trafiği azaltılır, sunucu üzerindeki yük hafifler ve kullanıcıya daha akıcı bir deneyim sunulmuş olur.
@@ -110,7 +109,4 @@ export default Debaunce;
 
 Networkde oluşan trafiği izlediğimiz zaman kullanıcı girdisine göre api istek atarken neden debaunce tektiğini kullanmamız gerekiyor daha iyi bir şekilde anlaşılıyor .
 
-<video autoplay loop muted>
-  <source src="./assests/debaunced.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img src="./assests/debaunednewtork.PNG" width="100%" />  
