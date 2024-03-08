@@ -2,7 +2,8 @@
 
 // import { NavLink } from "react-router-dom";
 // import Counter from "./Counter";
-import Todos from "./zustand/Todos";
+import Debaunce from "./Debaunce";
+// import Todos from "./zustand/Todos"; 
 //  import Todo from "./Mobx-todoApp/Todo" 
 // import Todos from "./recoil-app/Todos"; 
 
@@ -10,7 +11,8 @@ import Todos from "./zustand/Todos";
 function Home() {
     
   return <>
-  <Todos/>
+  <Debaunce/>
+  {/* <Todos/> */}
   {/* <Todos/>  */}
  {/* <Todo/>  */}
   {/* <Counter/> */}

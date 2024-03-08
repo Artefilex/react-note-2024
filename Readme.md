@@ -17,3 +17,5 @@
 15. [Server Side Rendering (SSR)](./015-SSR.md)
 16. [Test Driven Development](./016-React-Testing.md)
 17. [Progressive Web Apps](./017-Progressive-Web-Apps.md)
+18. [Developer Tools](./018-Debounce.md)
+19. [Custom Hook](./019-Custom-Hook.md)
