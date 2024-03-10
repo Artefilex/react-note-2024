@@ -1,5 +1,5 @@
 import  { useEffect, useState } from "react";
-import useDebounce from "../helpers/useDebaunce";
+import useDebounce from "../hooks/useDebaunce";
 
 function Debaunce() {
     const [value , setValue ] = useState("")

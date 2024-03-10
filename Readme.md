@@ -19,3 +19,4 @@
 17. [Progressive Web Apps](./017-Progressive-Web-Apps.md)
 18. [Developer Tools](./018-Debounce.md)
 19. [Custom Hook](./019-Custom-Hook.md)
+20ç [RTK Query](./020-RTK-Query.md) 
