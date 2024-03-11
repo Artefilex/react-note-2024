@@ -1,16 +1,18 @@
 // import { NavLink } from "react-router-dom";
 // import Counter from "./Counter";
 import Debaunce from "./Debaunce";
+import ReactQuery from "./ReactQuery";
 // import Todos from "./zustand/Todos";
 //  import Todo from "./Mobx-todoApp/Todo"
 // import Todos from "./recoil-app/Todos";
 
-import Rtk from "./Rtk";
+// import Rtk from "./Rtk";
 
 function Home() {
   return (
     <>
-      <Rtk />
+     <ReactQuery/>
+      {/* <Rtk /> */}
       <Debaunce />
       {/* <Todos/> */}
       {/* <Todos/>  */}
